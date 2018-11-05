@@ -2,20 +2,31 @@ body{
     background:#1F2833;
     margin: 0%;
 }
-.header{
+.heading{
     margin:0%;
-    padding: 1%;
+    height: 100vh;
     background:#0a1e33;
+    z-index: -1;
+    text-align: center;
+    vertical-align:middle;
 }
 
 .title_of_page{
+    padding: 2%;
     color:#66FCF1;
     font-family: 'Cinzel', serif;
-    font-size:40px;
+    font-size:20vh;
+    font-weight: 600;
     text-shadow: 2px 1px 2px #45A29E;
     animation: flicker 3s linear infinite;
 }
-
+.aboutus{
+    display: inline-block;
+    width:60%;
+    font-size: 3vh;
+    font-family: 'Roboto', sans-serif;
+    color:#C5C6C7;
+}
 
 @keyframes flicker {
 	from { opacity: 1; } 
