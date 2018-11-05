@@ -1,0 +1,27 @@
+body{
+    background:#1F2833;
+    margin: 0%;
+}
+.header{
+    margin:0%;
+    padding: 1%;
+    background:#0a1e33;
+}
+
+.title_of_page{
+    color:#66FCF1;
+    font-family: 'Cinzel', serif;
+    font-size:40px;
+    text-shadow: 2px 1px 2px #45A29E;
+    animation: flicker 3s linear infinite;
+}
+
+
+@keyframes flicker {
+	from { opacity: 1; } 
+    92% { opacity: 0; }
+	93% { opacity: 0.9; }
+    94% { opacity: 0.2; }
+    96% { opacity: 1; } 
+	to { opacity: 1; }
+}
