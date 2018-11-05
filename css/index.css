@@ -5,10 +5,7 @@ body{
 .heading{
     margin:0%;
     height: 100vh;
-    z-index: -1;    background-image:url("/2.jpeg");
-    background-size: cover;
-    background-attachment: fixed;
-
+    z-index: -1;   
     text-align: center;
     vertical-align:middle;
 }
@@ -44,9 +41,10 @@ body{
 }
 .aboutus{
     display: inline-block;
-    width:60%;
+    width:70%;
     font-size: 3vh;
     font-family: 'Roboto', sans-serif;
+    line-height: 5vh;
     color:#C5C6C7;
 }
 
