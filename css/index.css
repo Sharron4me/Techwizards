@@ -1,17 +1,21 @@
 body{
-    background:#1F2833;
     margin: 0%;
 }
 .heading{
+    position: absolute;
+    background:#1A1A1D;
     margin:0%;
+    z-index: -2;
     height: 100vh;
-    z-index: -1;   
     text-align: center;
     vertical-align:middle;
 }
 .navigation{
+    padding: 1%;
     text-align: right;
     display:block;
+    vertical-align:middle;
+    line-height: 5vh;
 }
 .navigation .right_nav{
     margin: 0%;
@@ -26,18 +30,29 @@ body{
     font-family: 'Roboto', sans-serif;
     list-style: none;
 }
+.navigation ul i {
+    color:#C3073F;
+}
 .body1{
     display: block;
 }
+.nimbus2000{
+    position: relative;
+    float: left;
+    width:20vh;
+    z-index: -1;
+    opacity: 0.5;
+    animation: example 50s linear infinite;
+}
 .title_of_page{
-    padding: 2%;
-    color:#66FCF1;
-    font-family: 'Cinzel', serif;
+    padding: 1% 1% 2% 1%;
+    color:#C3083F;
+    font-family: 'Orbitron', sans-serif;
     font-size:20vh;
     font-weight: 600;
-    text-shadow: 2px 1px 2px #45A29E;
+    text-shadow: 2px px 2px #6F2232;
     display: block;
-    animation: flicker 3s linear infinite;
+/*   animation: ease-in 4s linear infinite;*/
 }
 .aboutus{
     display: inline-block;
@@ -47,7 +62,19 @@ body{
     line-height: 5vh;
     color:#C5C6C7;
 }
+.Langicons i{
+    color:white;
+    margin-left: 1%;
+    margin-right: 1%;
+}
 
+@keyframes example {
+    0%   {left:0px;top:0vh;}
+    25%  {left:0vw;top:75vh; transform: rotate(180deg);}
+    50% {left:90vw; top:75vh; transform: rotate(360deg);}
+    75% {left:90vw;top:0vh;transform:rotate(180deg);}
+    100%{left:0vw;top:0vh;transform:rotate(0deg);}
+}
 @keyframes flicker {
 	from { opacity: 1; } 
     92% { opacity: 0; }
